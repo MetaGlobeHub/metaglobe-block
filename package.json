@@ -1,0 +1,68 @@
+{
+  "name": "metaglobe-block",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.4.1",
+  "description": "> TODO: description",
+  "main": "lib/index.js",
+  "typings": "typings",
+  "source": "index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib",
+    "typings"
+  ],
+  "scripts": {
+    "tsc": "tsc --build",
+    "test": "nyc npm run mocha",
+    "mocha": "cross-env TS_NODE_FILES=true mocha --timeout 5000 --exit --check-leaks --throw-deprecation --trace-warnings --require ts-node/register 'tests/**/*.test.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaGlobeHub/metaglobe-block.git"
+  },
+  "keywords": [
+    "ganache",
+    "ganache-ethereum-block",
+    "ethereum",
+    "evm",
+    "blockchain",
+    "smart contracts",
+    "dapps",
+    "solidity",
+    "vyper",
+    "fe",
+    "web3",
+    "tooling",
+    "truffle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MetaGlobeHub/metaglobe-block/issues"
+  },
+  "homepage": "https://github.com/MetaGlobeHub/metaglobe-block#readme",
+  "devDependencies": {
+    "@types/mocha": "9.0.0",
+    "cross-env": "7.0.3",
+    "mocha": "9.1.3",
+    "nyc": "15.1.0",
+    "ts-node": "10.4.0",
+    "typescript": "4.6.4"
+  },
+  "dependencies": {
+    "@ethereumjs/common": "2.6.4",
+    "@ganache/rlp": "0.4.0",
+    "@ganache/utils": "0.4.0",
+    "emittery": "0.10.0",
+    "ethereumjs-util": "7.1.4",
+    "metaglobe": "0.4.1",
+    "metaglobe-address": "0.4.1",
+    "metaglobe-transaction": "0.4.1",
+    "metaglobe-utils": "0.4.1"
+  }
+}
