@@ -1,0 +1,8 @@
+# floders
+.nyc_output
+lib
+node_modules
+typings
+
+# files
+yarn.lock
